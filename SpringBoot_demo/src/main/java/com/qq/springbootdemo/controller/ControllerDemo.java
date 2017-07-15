@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
  * Created by cliffyan on 2017/7/15.
  */
 @RestController
+@RequestMapping("/demo")
 public class ControllerDemo {
 
     @RequestMapping("/index")

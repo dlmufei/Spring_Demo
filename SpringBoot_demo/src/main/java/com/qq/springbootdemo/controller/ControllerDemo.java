@@ -1,5 +1,6 @@
 package com.qq.springbootdemo.controller;
 
+import com.qq.springbootdemo.bean.Person;
 import com.qq.springbootdemo.bean.Result;
 import com.qq.springbootdemo.utils.Constants;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,7 +19,12 @@ public class ControllerDemo {
         Result result=new Result();
         result.setCode(0);
         result.setMsg(Constants.STR_SUCCESS);
-        result.setData("data:data");
+
+        Person person=new Person();
+        person.setId(10001);
+        person.setName("qq");
+        person.setAddress("shenzhen");
+        result.setData(person);
         return result;
 
     }

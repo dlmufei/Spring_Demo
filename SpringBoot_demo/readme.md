@@ -7,3 +7,6 @@
 > cd target
 
 > java -jar springboot_demo-0.0.1-SNAPSHOT.jar
+
+## 访问接口
+> http://localhost:8080/index

@@ -1,4 +1,4 @@
-package com.example.demo.utils;
+package com.qq.springbootdemo.utils;
 
 /**
  * Created by cliffyan on 2017/7/16.

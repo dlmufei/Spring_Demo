@@ -1,4 +1,4 @@
-package com.example.demo.bean;
+package com.qq.springbootdemo.bean;
 
 /**
  * Created by cliffyan on 2017/7/16.

@@ -1,7 +1,7 @@
-package com.example.demo.controller;
+package com.qq.springbootdemo.controller;
 
-import com.example.demo.bean.Result;
-import com.example.demo.utils.Constants;
+import com.qq.springbootdemo.bean.Result;
+import com.qq.springbootdemo.utils.Constants;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 

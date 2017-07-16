@@ -12,10 +12,10 @@
 > http://localhost:8080/demo/index
 
 ## jar包改为war包
-### tomcat部署包
-> 拷贝到tomcat webapp目录: cp target/springbootdemo.war ~/dev/tomcat/apache-tomcat-7.0.70/webapps
+### tomcat部署包脚本
+> 启动脚本: ./tomcat-start.sh
 
-> 启动tomcat: ~/dev/tomcat/apache-tomcat-7.0.70/bin/startup.sh
+> 停止脚本: ./tomcat-stop.sh
 
 ### 访问链接
 > http://localhost:8080/springbootdemo/demo/index

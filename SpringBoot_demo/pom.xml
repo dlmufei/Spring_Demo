@@ -6,7 +6,9 @@
 	<groupId>com.example</groupId>
 	<artifactId>springboot_demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<!--<packaging>jar</packaging>-->
+	<!--修改打包形式-war-->
+	<packaging>war</packaging>
 
 	<name>SpringBoot_demo</name>
 	<description>Demo project for Spring Boot</description>
@@ -28,6 +30,27 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+			<!-- 移除嵌入式tomcat插件 -->
+			<exclusions>
+				<exclusion>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-starter-tomcat</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<!--添加servlet-api的依赖-->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>3.1.0</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.tomcat</groupId>
+			<artifactId>tomcat-servlet-api</artifactId>
+			<version>8.0.36</version>
+			<scope>provided</scope>
 		</dependency>
 
 		<dependency>
@@ -38,6 +61,8 @@
 	</dependencies>
 
 	<build>
+		<!--设定war包名称,去掉默认版本号-->
+		<finalName>springbootdemo</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>

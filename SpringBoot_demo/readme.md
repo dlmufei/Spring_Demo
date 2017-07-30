@@ -2,7 +2,7 @@
 ### 方法1:
 > mvn spring-boot:run
 ### 方法2:
-> nvm install
+> mvn install
 
 > cd target
 
@@ -24,3 +24,12 @@
 
 ## banner
 > 网站: http://patorjk.com/software/taag/#p=display&f=Big&t=QQ
+
+## 添加自定义Filter
+> 注解形式 http://www.jianshu.com/p/05c8be17c80a
+> 代码的形式 http://www.ityouknow.com/springboot/2016/02/03/springboot(%E4%BA%8C)-web%E7%BB%BC%E5%90%88%E5%BC%80%E5%8F%91.html
+### (1)通过Configuration 代码的形式添加
+### (2)通过注解的形式:
+> @ServletComponentScan
+> @Order(1)
+> @WebFilter(filterName = "MyFilter", urlPatterns = "/*")
